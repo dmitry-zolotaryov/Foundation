@@ -54,18 +54,19 @@ nx serve marketing-site
 The marketing site will be available at `http://localhost:3001`
 
 ### Mobile App
+
+Prior to running the mobile app, you need to install Xcode, and Android Studio. Once you have Xcode installed, you also need to install the iOS simulator and have a default simulator created.
+
 ```bash
-# Navigate to mobile app directory
+# Install cocoapods
+brew install cocoapods
+
+# Install pods
 cd apps/mobile-app
-
-# Install dependencies
-npm install
-
-# Start Metro bundler
-npm start
+pod install
 
 # Run on iOS
-npm run ios
+nx run mobile-app:run-ios
 
 # Run on Android
 npm run android
