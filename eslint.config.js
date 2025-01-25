@@ -5,13 +5,9 @@ const compat = new FlatCompat();
 module.exports = [
   js.configs.recommended,
   {
+    ignores: ['**/node_modules/**', '**/dist/**', '**/.next/**'],
     linterOptions: {
       reportUnusedDisableDirectives: true,
-    },
-    settings: {
-      next: {
-        rootDir: 'apps/frontend-app'
-      }
     }
   }
-];
+]; 

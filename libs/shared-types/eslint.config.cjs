@@ -1,22 +1,12 @@
-const baseConfig = require('../../eslint.config.cjs');
+const { FlatCompat } = require('@eslint/eslintrc');
+const js = require('@eslint/js');
+const compat = new FlatCompat();
 
 module.exports = [
-  ...baseConfig,
+  js.configs.recommended,
   {
-    files: ['**/*.json'],
-    rules: {
-      '@nx/dependency-checks': [
-        'error',
-        {
-          ignoredFiles: [
-            '{projectRoot}/eslint.config.{js,cjs,mjs}',
-            '{projectRoot}/vite.config.{js,ts,mjs,mts}',
-          ],
-        },
-      ],
-    },
-    languageOptions: {
-      parser: require('jsonc-eslint-parser'),
-    },
-  },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    }
+  }
 ];
