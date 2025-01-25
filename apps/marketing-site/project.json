@@ -4,6 +4,14 @@
   "sourceRoot": "apps/marketing-site",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project marketing-site --web",
-  "targets": {}
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "port": 3001,
+        "buildTarget": "marketing-site:build",
+        "dev": true
+      }
+    }
+  }
 }

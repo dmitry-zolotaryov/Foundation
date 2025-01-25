@@ -52,16 +52,11 @@ npm run dev
 The frontend will be available at `http://localhost:3000`
 
 ### Marketing Site
+
 ```bash
-# Navigate to marketing site directory
-cd apps/marketing
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
+nx serve marketing-site
 ```
+
 The marketing site will be available at `http://localhost:3001`
 
 ### Mobile App
