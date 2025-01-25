@@ -40,16 +40,10 @@ npm run install:all # (assuming you have a script for this)
 ### Frontend App
 
 ```bash
-# Navigate to frontend directory
-cd apps/frontend-app
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
+nx serve frontend-app
 ```
-The frontend will be available at `http://localhost:3000`
+
+The frontend will be available at `http://localhost:3002`
 
 ### Marketing Site
 
