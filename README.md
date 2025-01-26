@@ -89,16 +89,6 @@ nx serve backend-api
 
 The backend will be available at `http://localhost:3000`
 
-## Additional Information
-
-### Environment Variables
-Create `.env` files in each project directory following the `.env.example` templates.
-
-### Troubleshooting
-Common issues and their solutions...
-
-## Contributing
-Instructions for contributing to the project...
-
 ## License
-Project license information...
+
+MIT License
