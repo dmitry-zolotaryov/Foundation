@@ -2,6 +2,20 @@
 
 This is a starter project for a monorepo used to build a mobile app, a web app, and a backend API.
 
+## Project Structure
+
+The project is organized into four applications in the apps directory:
+
+- `frontend-app`: The main frontend application built with React and Next.js.
+- `marketing-site`: A marketing website built with Next.js.
+- `mobile-app`: The mobile application built with React Native.
+- `backend-api`: The backend API built with Nest.js.
+
+Additionally, there are shared libraries for types, and utilities in the following directories:
+
+- `libs/shared-types`: Shared types for the project.
+- `libs/utils`: Shared utilities for the project.
+
 ## Local Environment Setup
 
 ### Prerequisites
