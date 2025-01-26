@@ -30,8 +30,8 @@ Additionally, there are shared libraries for types, and utilities in the followi
 1. Clone the repository
 
 ```bash
-git clone [repository-url]
-cd [project-directory]
+git clone https://github.com/dmitry-zolotaryov/Foundation
+cd Foundation
 ```
 
 2. Install dependencies
@@ -41,18 +41,18 @@ cd [project-directory]
 npm install
 
 # Install dependencies for all applications
-nx run install:all
+npm run install:all
 ```
 
 ## Running the Applications
 
-### Frontend App
+### Backend
 
 ```bash
-nx serve frontend-app
+nx serve backend-api
 ```
 
-The frontend will be available at `http://localhost:3002`
+The backend will be available at `http://localhost:3000`
 
 ### Marketing Site
 
@@ -61,6 +61,14 @@ nx serve marketing-site
 ```
 
 The marketing site will be available at `http://localhost:3001`
+
+### Frontend App
+
+```bash
+nx serve frontend-app
+```
+
+The frontend will be available at `http://localhost:3002`
 
 ### Mobile App
 
@@ -89,14 +97,6 @@ source ~/.bash_profile
 # Run on Android
 nx run mobile-app:run-android
 ```
-
-### Backend
-
-```bash
-nx serve backend-api
-```
-
-The backend will be available at `http://localhost:3000`
 
 ## License
 
