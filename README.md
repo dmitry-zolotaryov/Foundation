@@ -1,11 +1,6 @@
-# Project Name
+# Foundation
 
-## Overview
-A brief description of your project and its components:
-- Frontend App
-- Marketing Site
-- Mobile App
-- Backend
+This is a starter project for a monorepo used to build a mobile app, a web app, and a backend API.
 
 ## Local Environment Setup
 
