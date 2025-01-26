@@ -29,10 +29,10 @@ cd [project-directory]
 
 ```bash
 # Install root dependencies
-npm install # or yarn install
+npm install
 
 # Install dependencies for all applications
-npm run install:all # (assuming you have a script for this)
+nx run install:all
 ```
 
 ## Running the Applications
