@@ -55,7 +55,7 @@ The marketing site will be available at `http://localhost:3001`
 
 ### Mobile App
 
-Prior to running the mobile app, you need to install Xcode, and Android Studio. Once you have Xcode installed, you also need to install the iOS simulator and have a default simulator created.
+Prior to running the mobile app, you need to install [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio). Once you have Xcode installed, you also need to install the iOS simulator and have a default simulator created.
 
 ```bash
 # Install cocoapods
@@ -64,12 +64,21 @@ brew install cocoapods
 # Install pods
 cd apps/mobile-app
 pod install
+cd ../../
 
 # Run on iOS
 nx run mobile-app:run-ios
 
+# Install the JDK
+brew install openjdk@17
+
+# Set JAVA_HOME
+echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.bash_profile
+echo export "ANDROID_HOME=\$HOME/Library/Android/sdk" >> ~/.bash_profile
+source ~/.bash_profile
+
 # Run on Android
-npm run android
+nx run mobile-app:run-android
 ```
 
 ### Backend
