@@ -110,6 +110,6 @@ nx run mobile-app:run-android
 
 ## License
 
-Licensed Under: [MIT License](LICENSE)
-Year: 2025
+Licensed Under: [MIT License](./LICENSE.txt)<br />
+Year: 2025<br />
 Author: [Dmitry Zolotaryov](https://github.com/dmitry-zolotaryov)
