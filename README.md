@@ -72,20 +72,30 @@ The frontend will be available at `http://localhost:3002`
 
 ### Mobile App
 
-Prior to running the mobile app, you need to install [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio). Once you have Xcode installed, you also need to install the iOS simulator and have a default simulator created.
+Prior to running the mobile app, you need to install [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio). Once you have Xcode installed, you also need to set up at least one iOS simulator and one Android emulator.
+
+Running on iOS:
 
 ```bash
-# Install cocoapods
+# Install command line tools
 brew install cocoapods
+brew install ios-deploy
 
 # Install pods
-cd apps/mobile-app
+cd apps/mobile-app/ios
 pod install
-cd ../../
+cd ../../../
+
+# List all available simulators
+xcrun simctl list devices
 
 # Run on iOS
-nx run mobile-app:run-ios
+nx run mobile-app:run-ios --simulator=<enter the simulator ID>
+```
 
+Running on Android:
+
+```bash
 # Install the JDK
 brew install openjdk@17
 
