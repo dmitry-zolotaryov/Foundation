@@ -1,6 +1,6 @@
 # Foundation
 
-Foundation is a starter project used to build a mobile app, a web app, a marketing site,and a backend API.
+Foundation is a starter project used to build a mobile app, a web app, a marketing site, and a backend API.
 
 ## Project Structure
 
